@@ -1,0 +1,210 @@
+/* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
+body {
+  background:#cdcdcd;
+}
+
+h1 {
+  font-size: 30px;
+  color: #f1f1f1;
+  background: #05a5a5;
+  margin-left: 60px;
+}
+
+h2 {
+  font-size: 30px;
+  color: #05a5a5;
+  margin-left: 15px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #05a5a5;
+  text-align:center;
+}
+
+
+/* Selecting elements by class */
+.container {
+  margin: auto;
+}
+
+/* Selecting elements by ID */
+#main-text,
+#weather-image {
+  float: left;
+}
+
+#figure {
+  position: relative;
+}
+
+#main-text {
+  width: 100%;
+}
+
+#weather-image {
+  width: 280px;
+  height: 280px;
+  margin-right: 20px;
+}
+
+#weather-image2 {
+  width: 170px;
+  height: 170px;
+  margin-left: 10px;
+  position:relative; 
+  display:inline-block; 
+}
+#weather-image3 {
+  width: 400px;
+  height: 250px;
+  display: block;
+  margin: 0 auto;
+}
+
+#weather-image4 {
+  width: 500px;
+  height: 350px;
+  display: block;
+  margin: 0 auto;
+}
+
+.jumbotron{
+  padding:0 !important;
+  margin-top:70px !important;
+  background: #fff;
+  margin-bottom: 0 !important;
+  margin-right: 12px;
+  margin-left: 12px;
+  position: relative;
+}
+.container-fluid{
+  padding:0 !important;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+  
+ /* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+   margin-top: 8px;
+   vertical-align: middle;
+}
+
+
+/* ==========================================================
+        Navbar Styles
+   ==========================================================*/
+   nav.navbar {
+    background: #fff;
+    color: rgb(136, 131, 131);
+    border-bottom: none;
+    border-radius: 0;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+    padding: 15px 0;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+/* Navbar Brand */
+nav.navbar a.navbar-brand {
+    background: rgb(2, 179, 155);
+    color: #fff;
+    font-weight: 600;
+}
+    nav.navbar a.navbar-brand:hover,
+    nav.navbar a.navbar-brand:focus {
+        color: inherit;
+    }
+
+
+/* Toggle Button */
+nav.navbar .navbar-toggle {
+    background: #fff;
+    color: #333;
+    border: none;
+    border-radius: 0;
+}
+    nav.navbar .navbar-toggle:hover,
+    nav.navbar .navbar-toggle:focus {
+        background: #fff;
+        color: #333;
+    }
+
+/* Navbar Components Holder */
+nav.navbar .navbar-collapse {
+    border: none;
+}
+
+/* Navbar links */
+nav.navbar ul.navbar-nav {
+    border: none;
+}
+
+nav.navbar ul.navbar-nav a {
+    color: #333;
+}
+    nav.navbar ul.navbar-nav a:hover,
+    nav.navbar ul.navbar-nav a:focus {
+      color: #333;
+      background: rgb(177, 174, 174);
+  }
+
+
+/* Navbar Button */
+nav.navbar button.navbar-btn {
+    border-radius: 0;
+    border-color: #6172b9;
+    background: #6172b9;
+    color: #fff;
+}
+    nav.navbar button.navbar-btn:hover {
+        background: #fff;
+        color: #6172b9;
+    }
+
+
+/* Changing the collapsing breakpoint */
+@media (max-width: 780px) {
+   nav.navbar {
+    background: #fff;
+  }
+ .navbar-header {
+        float: none;
+        background: rgb(2, 179, 155);
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        overflow: hidden !important;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block!important;
+    }
+    .navbar-collapse *[class*='navbar-'] {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav > li {
+        float: none;
+    }
+    .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
